@@ -1,4 +1,8 @@
 package com.practice.demo.repository;
 
-public interface UserRepo {
+import com.practice.demo.entity.Users;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepo extends JpaRepository<Users,Long> {
+
 }
